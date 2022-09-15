@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/addItemImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp" />
+
+            <TextView
+                android:id="@+id/addItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@+id/addItemImage"
+                android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addTextPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@+id/addItemName"
+                android:text="Price :"
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@id/addItemName"
+                android:layout_toRightOf="@+id/addTextPrice"
+                android:text="100.00 RS"
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addItemQty"
+                android:padding="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@+id/addTextPrice"
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:hint="Enter the Quantity"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/addItem"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#488aff"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:text="Add To Cart"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
